@@ -1,0 +1,187 @@
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="../../resources/css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+    <link href="../../resources/css/signup.css" rel="stylesheet" type="text/css">
+    <link href="../../resources/css/footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../resources/css/aos.css" />
+    <script src="../../430d58d481.js" ></script>
+  </head>
+  <body>
+  <div id="wrapper" class="col-xl-12">
+    <link href="../../resources/css/header.css" rel="stylesheet" type="text/css">
+<nav class="navbar navbar-light navbar-expand-md hdr-hd justify-content-center">
+    <a href="../../index.html" class="navbar-brand d-flex mr-auto"><img src="../../resources/img/logo.png" width="50" alt=""></a>
+    <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item">
+                <a id="home" class="nav-link nav-link-ltr active1" href="../../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a id="product" class="nav-link nav-link-ltr " href="../../products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+                <a id="status" class="nav-link nav-link-ltr client" href="../../status.html">STATUS</a>
+            </li>
+                    </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <a class="s-icon1" target="_blank" href="https://dsc.gg/redengine-public">
+                <div class="d-icon"></div>
+            </a>
+            <a class="s-icon2" href="">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </form>
+        <!--<form class="form-inline my-2 my-lg-0">-->
+                        <a class="btn btn-primary hd-btn1" href="../../signup.html">SIGN UP &nbsp; <img src="../../resources/img/signup.png" width="15" style="padding-bottom: 5px" alt=""></a>
+                    <!--</form>-->
+    </div>
+</nav>
+    <div class="col-xl-12 div1">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-4 col-md-4 col-10 d1rd1 d-none d-xl-block"></div>
+        <div class="col-xl-6 col-md-6 col-11 d1rd2">
+          <h5 class="s1-txt">welcome to</h5>
+          <h5 class="s1-red">redengine</h5>
+          <h6 class="s2-txt">Sign up to get connected to us</h6>
+          <form class="s-form" id="signup-form">
+            <input type="hidden" name="_token" value="v8Dx6bpHKQKcrZdRaC6J5eSOz4oSjgXaTVZdH2bi">            <div class="form-group">
+              <input class="s-inp" type="text" name="username" required/>
+              <label class="s-label"><i class="far fa-user"></i>&nbsp;Name</label>
+            </div>
+            <div class="form-group">
+              <input class="s-inp" type="email" name="email" required/>
+              <label class="s-label"><i class="far fa-envelope"></i>&nbsp;Email</label>
+            </div>
+            <div class="form-group">
+              <input class="s-inp" type="password" name="password1" required/>
+              <label class="s-label"><i class="fas fa-lock"></i>&nbsp;Password</label>
+            </div>
+            <div class="form-group">
+              <input class="s-inp" type="password" name="password2" required/>
+              <label class="s-label"><i class="fas fa-lock"></i>&nbsp;Confirm Password</label>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LcyZdwZAAAAAPAGBAzg3UnTml6n2GKfVFB_-JJQ" data-callback="sendForm" data-size="invisible"></div>
+            <p>Already registered?<a class="lnk-btn" href="../../login.html"> Login here</a></p>
+            <!--<a class="btn btn-primary s-btn1" href="#">SIGN UP</a>-->
+            <button class="btn btn-primary s-btn1" type="submit" >SIGN UP</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="../../sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript" src="../../ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../../resources/css/footer.css">
+<footer class="footer">
+    <div class="col-xl-12">
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-md-10">
+                <p class="copyright">
+                    Copyright &copy; 2020-2022 RedEngine. All rights reserved. Unauthorized copying, use or distribution is prohibited.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>  </div>
+  <script src="../../resources/js/jquery-3.3.1.min.js"></script>
+  <script src="../../resources/js/popper.min.js"></script>
+  <script src="../../ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="../../resources/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    $(document).ready(function(){
+        $("a.nav-link").removeClass("active1");
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".nav-link").click(function(){
+          $("a.nav-link").removeClass("active1");
+      });
+      $("#home").click(function(){
+          $("#home").addClass("active1");
+      });
+      $("#product").click(function(){
+          $("#product").addClass("active1");
+      });
+      $("#contact").click(function(){
+          $("#contact").addClass("active1");
+      });
+      $("#navbar-toggler").click(function(){
+          $("nav").toggleClass('scrolled-t');
+      });
+    });
+  </script>
+  <script>
+    function myFunction(x) {
+      if (x.matches) {
+        $(window).scroll(function(){
+          $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+        });
+      } else {
+        $(window).scroll(function(){
+          $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+        });
+      }
+    }
+    var x = window.matchMedia("(max-width: 800px)")
+    myFunction(x)
+    x.addListener(myFunction);
+  </script>
+  <script type="text/javascript" src="../../ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function sendForm()
+    {
+      $.ajax({
+        url: 'https://redengine.eu/signup',
+        type: 'POST',
+        data: {
+          _token: $('input[name="_token"]').val(),
+          username: $('input[name="username"]').val(),
+          email: $('input[name="email"]').val(),
+          password: $('input[name="password1"]').val(),
+          confirm_password: $('input[name="password2"]').val(),
+          'g-recaptcha-response': grecaptcha.getResponse()
+        },
+        dataType: "json",
+        success: function(response) {
+          swal({
+            title: "Signup",
+            text: response.message,
+            icon: response.type,
+          });
+          if(response.type == "Success")
+          {
+            setTimeout(() => {
+            }, 15000);
+          }
+        },
+        error: function() {
+          swal({
+            title: "Oops",
+            text: "Something went wrong, if this persists, please contact us.",
+            icon: "error",
+          });
+        }
+      });
+    }
+    $(document).ready(function()
+    {
+      $("#signup-form").submit(function(event)
+      {
+        grecaptcha.execute();
+        event.preventDefault();
+      });
+    });
+  </script>
+  </body>
+</html>

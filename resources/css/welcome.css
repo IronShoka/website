@@ -1,0 +1,77 @@
+#welcome_bar {width: auto; height: auto; display: block; text-align: center; padding: 20px; color: #fff; position: relative; font-size: 18px; font-weight: 500;}
+#close_welcome_bar {display: inline-block; cursor: pointer; padding: 20px; position: absolute; top: 0px; right: 0; font-weight: bold; font-size: 18px;}
+.addthis_sharing_toolbox {clear:initial!important;}
+#close_welcome_bar:hover { background: #F04F3F}
+#welcome_bar a{background: #fff; color: #FC4F3F; padding: 8px 20px; border-radius: 100px; margin-left: 5px; font-weight: 600;}
+#welcome_bar a:hover{background:#FC4F3F;color:#fff;}
+.welcome-area {background: linear-gradient(270deg, #07d09c, #00aa7e, #c326fd, #ff08d5);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 53s ease infinite;
+-moz-animation: AnimationName 53s ease infinite;
+-o-animation: AnimationName 53s ease infinite;
+animation: AnimationName 53s ease infinite;}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+#btn--yp {
+  box-sizing: content-box;
+  position: fixed;
+  z-index: 9;
+  bottom: 1rem;
+  right: 1rem;
+  border: solid 1rem transparent;
+  width: 4.625rem;
+  height: 4.625rem;
+  background: url(https://i.imgur.com/vr0MwUJ.png) 50%/cover content-box;
+  text-indent: 200vw;
+  text-shadow: none;
+  filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
+  transition: .5s;
+  white-space: nowrap;
+}
+#btn--yp:before {
+  box-sizing: inherit;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  margin: 1rem -.5rem;
+  padding: .5rem;
+  width: 100%;
+  border-radius: 5px;
+  background: #e8e0e0;
+  color: #000;
+  font: 1rem/1.25rem trebuchet ms, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0vw;
+  white-space: normal;
+  animation: float 1s ease-in-out infinite alternate;
+  content: attr(data-txt);
+}
+#btn--yp:hover, #btn--yp:focus {
+  outline: none;
+  filter: grayscale(0) drop-shadow(0 0 1px crimson);
+}
+
+@keyframes float {
+  to {
+    transform: translateY(0.75rem);
+  }
