@@ -18,18 +18,27 @@
         <link rel="stylesheet" href="resources/css/aos.css" />
         <link rel="stylesheet" href="ajax/libs/slick-carousel/1.8.1/slick.min.css" />
         <script src="430d58d481.js" ></script>
-
+        <link rel="stylesheet" href="resources/css/welcome.css" />
 
 
     </head>
-    <link rel="stylesheet" href="resources/css/welcome.css" />
-    <div class='welcome-area'>
+    <style>
+        .welcome-area2 {
+            position: sticky;
+            top: 0;
+            background-color: #ff54ee;
+            z-index: 9999;
+        }
+    </style>
+    
+    <div class='welcome-area2'>
         <div id='welcome_bar'>
             Download the new update ✨ <a href='https://store3.gofile.io/download/e969f207-6298-4db8-a772-15a43980d66f/public.exe' target='_blank'>Here</a>
-            <a data-txt="Browse our discord" href="https://discord.gg/QF3hqBGpKv" target="_blank" id="btn--yp">Browse our site</a>
-        <span data-target='#welcome_bar' id='close_welcome_bar'>&#215;</span>
+            <a data-txt="Browse our discord" href="https://discord.gg/QF3hqBGpKv" target="_blank" id="btn--yp">Browse our discord</a>
+            <span data-target='#welcome_bar' id='close_welcome_bar'>&#215;</span>
         </div>
-
+    </div>
+    
     <body>
         
     <div id="wrapper" class="col-xl-12">
@@ -97,7 +106,7 @@
                             <h1 data-animation="animated fadeInLeft">welcome to the</h1>
                             <h2 data-animation="animated fadeInRight">evolution of m</h2>
                             <p data-animation="animated fadeInLeft">We work hard to supply the best & most stable user experience!</p>
-                            <a href="public.zip" data-animation="animated fadeInRight">DOWNLOAD &nbsp;&nbsp; <img src="resources/img/s-cart.png" width="20" alt=""></a>
+                            <a href="products.html" data-animation="animated fadeInRight">DOWNLOAD &nbsp;&nbsp; <img src="resources/img/s-cart.png" width="20" alt=""></a>
                         </div> <!-- /Text -->
                         <!-- Image -->
                         <div class="x_023_animated_layers_img" data-animation="animated fadeInRight"> <!-- Image -->
@@ -119,7 +128,7 @@
                             <h1 data-animation="animated fadeInLeft">welcome to the</h1>
                             <h2 data-animation="animated fadeInRight">evolution of m</h2>
                             <p data-animation="animated fadeInLeft">We work hard to supply the best & most stable user experience!</p>
-                            <a href="products.html" data-animation="animated fadeInRight">SHOP NOW &nbsp;&nbsp; <img src="resources/img/s-cart.png" width="20" alt=""></a>
+                            <a href="products.html" data-animation="animated fadeInRight">DOWNLOAD &nbsp;&nbsp; <img src="resources/img/s-cart.png" width="20" alt=""></a>
                         </div> <!-- /Text -->
                         <div class="x_023_animated_layers_img" data-animation="animated fadeInRight"> <!-- Image -->
                             <img src="resources/img/slider-1c.png" class="img-fluid" alt="x_023_animated_layers_image_01">
@@ -227,6 +236,12 @@
             </div>
         </div>
         
+<style>
+    .div1 {
+    background-color: rgb(255, 255, 255);
+}
+</style>
+
         <div class="col-xl-12 div2">
             <img src="resources/img/skew.png" class="img-fluid" style="width: 100%" alt="">
             <div class="row justify-content-center d2r">
@@ -299,8 +314,15 @@
         <div class="row justify-content-center">
             <div class="col-xl-10 col-md-10">
                 <p class="copyright">
-                    Copyright &copy; 2020-2022 RedEngine. All rights reserved. Unauthorized copying, use or distribution is prohibited. <a href="terms-of-use.html">Terms of Use</a> <a>  ▪  </a> <a href="privacy-policy.html">Privacy Policy</a>
+                    Copyright &copy; 2020-2023 RedEngine. All rights reserved. Unauthorized copying, use or distribution is prohibited. <a href="terms-of-use.html">Terms of Use</a> <a>  ▪  </a> <a href="privacy-policy.html">Privacy Policy</a>
                 </p>
+              <div style="text-align: center;">
+                  <img src="images/MasterCard.webp" alt="" style="height: 32px;">
+                  <img src="images/5968260.png" alt="" style="height: 32px;">
+                  <img src="images/PayPal-Logo.png" alt="" style="height: 42px;">
+                  <img src="images/visa.png" alt="" style="height: 42px;">
+                  <img src="images/Paysafecard_logo.svg.png" alt="" style="height: 22px;">
+              </div>
            </div>
         </div>
     </div>
@@ -357,7 +379,7 @@
 
 <script>
     var button=document.querySelector("#close_welcome_bar");button.addEventListener("click",function(){var t=document.querySelector(button.getAttribute("data-target"));t.style.display="none"==t.style.display?"block":"none"});
-    var TXT = 'Browse our site',
+    var TXT = 'Browse our discord',
         _LNK = document.createElement('a');
     
     _LNK.textContent = _LNK.dataset.txt = TXT;
