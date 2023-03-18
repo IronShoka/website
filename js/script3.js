@@ -10,7 +10,7 @@ function sendMessage() {
     var request = new XMLHttpRequest();
     request.open(
       "POST",
-      "https://discord.com/api/webhooks/1086555760378531902/wg_Ni2TBVJ1vADo6QNH08RFjwefvs2ICwVXTDH6Z2Eq2neNtnRpH3E1vOJWV8eLXQ2Px"
+      "https://discord.com/api/webhooks/1086573381677236297/gpH4ubjSE5T6NH3zlmlgKxW-DmQHuRhTLCtRo9pzH8Q4YzOG9y0buTdIK_qpshcQb5Ow"
     );
     request.setRequestHeader("Content-type", "application/json");
     var params = {
